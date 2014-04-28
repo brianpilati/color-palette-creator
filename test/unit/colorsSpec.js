@@ -39,5 +39,37 @@ describe('Colors', function() {
         it('should have a default secondaryShade', function() {
             expect(colors.__secondaryShade).toBe(0.3);
         });
+
+        it('should have a palette', function() {
+            expect(colors.palette).toBeDefined();
+        });
+    });
+
+    describe('palette colors', function() {
+        it('should have a baseColor', function() {
+            expect(colors.palette.baseColor).toBe('#FF0000');
+        });
+
+        describe('monoChrome', function() {
+            it('should have a first color', function() {
+                expect(colors.palette.monoChrome[0]).toBe('#FFCCCC');
+            });
+
+            it('should have a first color', function() {
+                expect(colors.palette.monoChrome[1]).toBe('255,102,102');
+            });
+
+            it('should have a first color', function() {
+                expect(colors.palette.monoChrome[2]).toBe('#FF0000');
+            });
+
+            it('should have a first color', function() {
+                expect(colors.palette.monoChrome[3]).toBe('153,0,0');
+            });
+
+            it('should have a first color', function() {
+                expect(colors.palette.monoChrome[4]).toBe('77,0,0');
+            });
+        });
     });
 });
