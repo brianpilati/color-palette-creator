@@ -56,7 +56,7 @@ describe('Colors', function() {
             });
 
             it('should have a first color', function() {
-                expect(colors.palette.monoChrome[1]).toBe('255,102,102');
+                expect(colors.palette.monoChrome[1]).toBe('#FF6666');
             });
 
             it('should have a first color', function() {
@@ -64,11 +64,11 @@ describe('Colors', function() {
             });
 
             it('should have a first color', function() {
-                expect(colors.palette.monoChrome[3]).toBe('153,0,0');
+                expect(colors.palette.monoChrome[3]).toBe('#990000');
             });
 
             it('should have a first color', function() {
-                expect(colors.palette.monoChrome[4]).toBe('77,0,0');
+                expect(colors.palette.monoChrome[4]).toBe('#4D0000');
             });
         });
     });
