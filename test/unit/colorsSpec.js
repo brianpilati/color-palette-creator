@@ -55,20 +55,50 @@ describe('Colors', function() {
                 expect(colors.palette.monoChrome[0]).toBe('#FFCCCC');
             });
 
-            it('should have a first color', function() {
+            it('should have a second color', function() {
                 expect(colors.palette.monoChrome[1]).toBe('#FF6666');
             });
 
-            it('should have a first color', function() {
+            it('should have a third color', function() {
                 expect(colors.palette.monoChrome[2]).toBe('#FF0000');
             });
 
-            it('should have a first color', function() {
+            it('should have a fourth color', function() {
                 expect(colors.palette.monoChrome[3]).toBe('#990000');
             });
 
-            it('should have a first color', function() {
+            it('should have a fifth color', function() {
                 expect(colors.palette.monoChrome[4]).toBe('#4D0000');
+            });
+        });
+
+        describe('complementary', function() {
+            describe('Primary Color', function() {
+                it('should have a first color', function() {
+                    expect(colors.palette.complementary.primary[0]).toBe('#FFCCCC');
+                });
+
+                it('should have a second color', function() {
+                    expect(colors.palette.complementary.primary[1]).toBe('#FF6666');
+                });
+
+                it('should have a third color', function() {
+                    expect(colors.palette.complementary.primary[2]).toBe('#FF0000');
+                });
+
+                it('should have a fourth color', function() {
+                    expect(colors.palette.complementary.primary[3]).toBe('#990000');
+                });
+
+                it('should have a fifth color', function() {
+                    expect(colors.palette.complementary.primary[4]).toBe('#4D0000');
+                });
+            });
+
+            describe('Complementary Color', function() {
+                it('should have a first color', function() {
+                    expect(colors.palette.complementary.complementary[0]).toBe('#00FFFF');
+                });
             });
         });
     });
